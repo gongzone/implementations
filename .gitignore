@@ -1,0 +1,17 @@
+node_modules/
+
+.cache/
+
+.vscode/
+
+bin/
+
+obj/
+
+*.env
+
+*.cbp
+
+*.depend
+
+*.layout
