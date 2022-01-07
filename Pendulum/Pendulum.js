@@ -22,7 +22,7 @@ class Pendulum {
   }
   drawLine(ctx) {
     ctx.beginPath();
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "orange";
     ctx.lineWidth = 8;
     ctx.moveTo(this.origin.x, this.origin.y);
     ctx.lineTo(this.vector.x, this.vector.y);
@@ -31,7 +31,7 @@ class Pendulum {
   }
   drawWeight(ctx) {
     ctx.beginPath();
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "orange";
     ctx.arc(this.vector.x, this.vector.y, 40, 0, Math.PI * 2, false);
     ctx.fill();
     ctx.closePath();

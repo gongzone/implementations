@@ -1,4 +1,4 @@
-import Pendulum from "./Pendulum.js";
+import PendulumSimulator from "./PendulumSimulator.js";
 
 class App {
   constructor() {
@@ -24,13 +24,13 @@ class App {
     this.canvas.height = Math.floor(this.fullHeight * this.scale);
     this.ctx.scale(this.scale, this.scale);
 
-    this.pendulum = new Pendulum(this.fullWidth, this.fullHeight);
+    this.PendulumSimulator = new PendulumSimulator(this.fullWidth, this.ctx);
   }
   animate() {
     window.requestAnimationFrame(this.animate.bind(this));
     this.ctx.clearRect(0, 0, this.fullWidth, this.fullHeight);
 
-    this.pendulum.draw(this.ctx);
+    this.PendulumSimulator.run();
   }
 }
 
