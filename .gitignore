@@ -4,14 +4,6 @@ node_modules/
 
 .vscode/
 
-bin/
-
 obj/
 
 *.env
-
-*.cbp
-
-*.depend
-
-*.layout
