@@ -60,7 +60,7 @@ p {
   margin: 0;
 }
 
-#login-layout {
+#layout {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -69,7 +69,7 @@ p {
   background-color: var(--color-layout);
 }
 
-.login-card {
+.card {
   width: 54rem;
   height: 62rem;
   background-color: var(--color-white);
@@ -78,11 +78,11 @@ p {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.login-card:hover {
+.card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.login-header {
+.header {
   position: relative;
   display: flex;
   justify-content: center;
