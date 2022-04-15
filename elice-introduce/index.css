@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-blue: rgb(49, 123, 207);
+  --color-layout: #e2e1e0;
+  --color-line: rgb(209, 209, 209);
+  --color-text: #3d3d3d;
+  --color-blurred-text: rgb(153, 153, 153);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  line-height: 1.3;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  background: var(--color-white);
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Noto Sans KR', arial, sans-serif;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  font-family: 'Roboto', 'Noto Sans KR', arial, sans-serif;
+  border: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#login-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-layout);
+}
+
+.login-card {
+  width: 54rem;
+  height: 62rem;
+  background-color: var(--color-white);
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.login-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.login-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  border-bottom: 2px solid var(--color-line);
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.main {
+  padding: 3rem;
+}
+
+.main-section-top {
+  position: relative;
+  display: flex;
+  row-gap: 2rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 2px solid var(--color-line);
+  margin-bottom: 1.5rem;
+}
+
+.img-box {
+  border: 0.4rem solid rgb(56, 56, 56);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.profile {
+  width: 18rem;
+}
+
+.scale-up {
+  transform: scale(1.15);
+}
+
+.img-boxs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.speech-bubble {
+  width: 20rem;
+}
+
+.text {
+  position: absolute;
+  width: 15rem;
+  padding-top: 2rem;
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+
+.main-section-bot {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.main-section-bot h1 {
+  text-align: center;
+}
+
+.main-section-bot button {
+  font-size: 1.68rem;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: rgb(83, 144, 170);
+  border-radius: 0.5rem;
+
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.main-section-bot button:hover {
+  transform: translateX(3%);
+}
