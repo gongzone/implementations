@@ -5,6 +5,7 @@ const SAYING_TEXT = '영치기 영차, 모두 화이팅.';
 const HOBBY_TEXT = '취업에 딱히 도움 안되는 이상한 것들 공부하기입니다.';
 const SHY_TEXT = '가까이서 보시면 너무 부끄러워요...';
 
+const card = document.querySelector('.card');
 const text2 = document.querySelector('.text');
 const buttons = document.querySelectorAll('.main-section-bot button');
 const imgBox = document.querySelector('.img-box');
@@ -68,8 +69,10 @@ const attachListener = () => {
 };
 
 window.onload = () => {
+  card.classList.add('view');
   fillText(INTRO_TEXT);
   attachListener();
+
   profile.addEventListener('mouseenter', () => {
     imgBox.classList.add('scale-up');
     fillText(SHY_TEXT);
